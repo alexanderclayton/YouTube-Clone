@@ -4,15 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Pinks
-        "retro-pink-light": "#FFA6C1", // Light pink
-        "retro-pink": "#FF80AB", // Main pink
-        "retro-pink-dark": "#FF4081", // Dark pink
+        // Light-Mode
+        "light-primary": "#BEA4EA", // Lavender
+        "light-secondary": "#E9C1F0", // Light Pink
+        "light-accent": "#2B3FBB", // Blue
+        "light-text": "#0C1104", // Black (greenish hue)
+        "light-background": "#F4FAEA", // Off-white
 
-        // Blues
-        "retro-blue-light": "#B3E5FC", // Light blue
-        "retro-blue": "#03A9F4", // Main blue
-        "retro-blue-dark": "#0288D1", // Dark blue
+        // Dark Mode
+        "dark-primary": "#BEA4EA", // Lavender
+        "dark-secondary": "#120514", // Dark Purple
+        "dark-secondary": "#98A2E7", // Light Purple (bluish hue)
+        "dark-text": "#F4FAEA", // Off-white
+        "dark-background": "#0C1104", // Black (greenish hue)
       },
     },
     plugins: [],
