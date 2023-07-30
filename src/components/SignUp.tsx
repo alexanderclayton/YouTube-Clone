@@ -63,15 +63,15 @@ export const SignUp: React.FC = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Create Account</button>
+      <button className="hover:text-retro-pink text-sm rounded bg-blue-500 px-4 pb-1 text-white hover:bg-blue-600 mb-2 ml-2" onClick={openModal}>Create Account</button>
       {modal && (
         <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-gray-500 bg-opacity-50">
-          <div className="flex flex-col rounded bg-white p-4 shadow-md">
-            <button
-              className="absolute right-2 top-2 rounded-full bg-gray-300 px-2 pb-1 hover:bg-gray-400"
+          <div className="absolute flex flex-col rounded bg-white p-4 shadow-md">
+          <button
+              className="border border-black absolute -right-4 -top-4 rounded-full bg-gray-300 px-2 pb-1 hover:bg-gray-400"
               onClick={closeModal}
             >
-              <span className="text-xl text-gray-700">close</span>
+              <span className="px-1 text-xl text-gray-700">x</span>
             </button>
             <input
               type="text"

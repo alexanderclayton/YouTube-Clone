@@ -63,15 +63,20 @@ export const SignIn: React.FC = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Sign In</button>
+      <button
+        className="mb-2 rounded bg-blue-500 px-4 pb-1 text-sm text-white hover:bg-blue-600 hover:text-retro-pink"
+        onClick={openModal}
+      >
+        Sign In
+      </button>
       {modal && (
-        <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-gray-500 bg-opacity-50">
-          <div className=" flex flex-col rounded bg-white p-4 shadow-md">
-          <button
-              className="absolute top-2 right-2 bg-gray-300 px-2 pb-1 rounded-full hover:bg-gray-400"
+        <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center">
+          <div className="absolute flex flex-col rounded bg-white p-4 shadow-md">
+            <button
+              className="absolute -right-4 -top-4 rounded-full border border-black bg-gray-300 px-2 pb-1 hover:bg-gray-400"
               onClick={closeModal}
             >
-              <span className="text-gray-700 text-xl">close</span>
+              <span className="px-1 text-xl text-gray-700">x</span>
             </button>
             <input
               type="text"
@@ -89,13 +94,13 @@ export const SignIn: React.FC = () => {
             />
             <button
               onClick={signIn}
-              className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 mb-2"
+              className="mb-2 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
             >
               Sign In
             </button>
             <button
               onClick={signInWithGoogle}
-              className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 mb-2"
+              className="mb-2 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
             >
               Sign In With Google
             </button>
