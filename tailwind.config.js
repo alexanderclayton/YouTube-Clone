@@ -18,6 +18,9 @@ export default {
         "dark-text": "#F4FAEA", // Off-white
         "dark-background": "#0C1104", // Black (greenish hue)
       },
+      aspectRatio : {
+        '4/3': '4 / 3'
+      }
     },
     plugins: [],
   },
