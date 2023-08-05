@@ -1,18 +1,17 @@
 //import//
-import { Header } from "./components/Header";
-import { Sidebar } from "./components/Sidebar";
-import { HomeVideos } from "./components/HomeVideos";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Video } from "./pages/Video";
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <div className="flex items-start">
-        <Sidebar />
-        <HomeVideos />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/video" element={<Video />} />
+      </Routes>
+    </Router>
   );
 }
 
