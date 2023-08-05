@@ -12,10 +12,23 @@ input {
   border-bottom-left-radius: 0;
 }
 
-.scroll {
+.inherit-left {
+  border-radius: inherit;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.scroll-y {
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
 .side-drawer {
   display: flex;
   flex-direction: column;
@@ -46,6 +59,12 @@ input {
 
 .side-drawer div h2 {
   font-size: 0.9rem;
+}
+
+.cut {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @layer base {

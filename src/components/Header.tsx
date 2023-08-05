@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
       <div
         className={
           nav
-            ? "scroll fixed h-screen w-[240px] translate-x-0 border bg-white transition duration-500 ease-in-out"
+            ? "scroll-y fixed h-screen w-[240px] translate-x-0 border bg-white transition duration-500 ease-in-out"
             : "east-in-out fixed translate-x-[-100%] duration-500"
         }
       >
