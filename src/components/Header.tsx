@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <div className="flex h-[56px] w-full">
+    <div className="fixed flex h-[56px] w-full bg-white">
       <div
         className={
           nav

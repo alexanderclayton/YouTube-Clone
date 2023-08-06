@@ -8,9 +8,9 @@ export const Home: React.FC = () => {
   return (
     <div className="w-full">
       <Header />
-      <div className="flex items-start">
+      <div className="flex items-start pt-[56px]">
         <Sidebar />
-        <div className="w-[94%]">
+        <div className="w-[94%] pl-6">
           <Topics />
           <HomeVideos />
         </div>
