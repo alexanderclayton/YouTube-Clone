@@ -13,7 +13,7 @@ export const Video: React.FC = () => {
           <SelectedVideo />
           <div className="lg:w-[40%]">
             <PreviewVideos />
-            <div className="px-4">
+            <div className="px-4 lg:hidden">
               <Comments />
             </div>
           </div>
