@@ -1,6 +1,5 @@
 //import//
 import Kanye from "../assets/kanye-rest-image.jpg";
-import { Comments } from "./Comments";
 import { RxAvatar } from "react-icons/rx";
 import { CiBellOn } from "react-icons/ci";
 import { BsChevronDown, BsThreeDots } from "react-icons/bs";
@@ -15,7 +14,7 @@ import { HiOutlineScissors } from "react-icons/hi";
 
 export const SelectedVideo: React.FC = () => {
   return (
-    <div className="w-full p-4 md:w-[60%]">
+    <div className="w-full p-4 lg:w-[60%]">
       <img src={Kanye} alt="yeezy" className="aspect-video object-cover" />
       <h2 className="pt-2 text-xl font-bold">Title to a Popular Video</h2>
       <div className="flex w-full flex-col items-start justify-start sm:flex-row sm:items-center">
@@ -86,7 +85,6 @@ export const SelectedVideo: React.FC = () => {
           </p>
         </div>
       </div>
-      <Comments />
     </div>
   );
 };
