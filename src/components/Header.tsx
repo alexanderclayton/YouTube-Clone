@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
         className={
           nav
             ? "scroll-y fixed h-screen w-[240px] translate-x-0 border bg-white transition duration-500 ease-in-out"
-            : "east-in-out fixed translate-x-[-100%] duration-500"
+            : "ease-in-out fixed translate-x-[-100%] duration-500"
         }
       >
         <div className="flex h-[56px] w-full items-center pl-2">
@@ -54,7 +54,7 @@ export const Header: React.FC = () => {
       <div className="flex w-full items-center justify-end sm:justify-center">
         <form className=" hidden sm:flex sm:min-w-[260px] sm:rounded-full sm:border md:min-w-[60%]">
           <input
-            className="ml-4 w-[100%]"
+            className="outline-none ml-4 w-[100%]"
             type="text"
             placeholder="Search Videos..."
           />
