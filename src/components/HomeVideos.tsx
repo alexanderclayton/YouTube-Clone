@@ -10,7 +10,7 @@ import Lightbulb from "../assets/first-application.jpg";
 
 export const HomeVideos: React.FC = () => {
   return (
-    <div className="grid w-full gap-4 sm:p-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid w-full gap-4 sm:p-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
       <div className="grid aspect-[4/3] grid-cols-6 grid-rows-5 p-4">
         <img
           src={Kanye}
