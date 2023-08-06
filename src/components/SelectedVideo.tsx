@@ -1,5 +1,6 @@
 //import//
 import Kanye from "../assets/kanye-rest-image.jpg";
+import { Comments } from "./Comments";
 import { RxAvatar } from "react-icons/rx";
 import { CiBellOn } from "react-icons/ci";
 import { BsChevronDown, BsThreeDots } from "react-icons/bs";
@@ -85,6 +86,9 @@ export const SelectedVideo: React.FC = () => {
           </p>
         </div>
       </div>
+        <div className="hidden lg:flex">
+          <Comments />
+        </div>
     </div>
   );
 };
